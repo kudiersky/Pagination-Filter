@@ -27,6 +27,14 @@ $(".pagination li").on("click", function filter() {                             
         $('ul.student-list li:eq(' + (i) + ')').show();                             //.show $
     }
 
+    $(".pagination").replaceWith('<div class="pagination"><li><a href="#">' + 1 + '</a></li></div>'); //create first pagination link
+
+    for (var i = 2; i <= totalPages; i++) {                                 //for loop starts at 2 as 1st has been created
+      $(".pagination").append('<li><a href="#">' + i + '</a></li>');      //adding pagination links with i as page number
+      }
+
+
+
 })
 
 
