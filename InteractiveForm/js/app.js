@@ -164,7 +164,7 @@ $('form').on('submit', function(event) { //action on submit button being clicked
     //for inputting Name
     if ($("#name").val() === "" && $('#nameErrorMessage').length < 1) { //if the name is blank as there are no error messages for this
         $("#name").before("<p><span class='error' id='nameErrorMessage'> " + errorMissingName + " </span></p>"); //create error box
-        errors = true; //log as error 
+        errors = true; //log as error
     } else {
         $('#nameErrorMessage').remove() //remove message
     }
